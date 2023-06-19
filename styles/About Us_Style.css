@@ -1,0 +1,199 @@
+﻿/*---------------------------------------generals------------------------------------*/
+body {
+    direction: rtl;
+    margin: 0px;
+    font-family: 'Segoe UI';
+    color: #464646;
+}
+
+.allSections {
+    height: 900px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 65px;
+}
+
+h3 {
+    font-size: 30px;
+    margin: 0px;
+}
+
+p {
+    font-size: 28px;
+    margin: 0px;
+}
+
+/*---------------------------------------nav bar------------------------------------*/
+
+nav {
+    background-color: #747EE6;
+    width: 100%;
+    height: 55px;
+}
+
+    nav ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        height: 55px;
+    }
+
+        nav ul li a {
+            padding-right: 45px;
+            padding-left: 45px;
+            text-decoration: none;
+            font-size: 30px;
+            color: white;
+            height: 55px;
+            display: flex;
+            align-items: center;
+        }
+
+            nav ul li a img {
+                height: 35px;
+                width: auto;
+            }
+
+    nav a:hover {
+        background-color: #4753D1;
+    }
+
+    nav ul li:nth-child(5) {
+        background-color: #4753D1;
+    }
+/*---------------------------------------header------------------------------------*/
+
+header {
+    background-color: #F7DAE7;
+}
+
+#breadCrumbs {
+    position: absolute;
+    top: 80px;
+    right: 100px;
+}
+
+    #breadCrumbs li {
+        display: inline;
+    }
+
+        #breadCrumbs li a {
+            color: #464646;
+        }
+
+header div:nth-child(3) {
+    margin-right: 100px;
+    margin-top: 40px;
+    float: right;
+}
+
+    header div:nth-child(3) span {
+        font-weight: bold;
+    }
+
+    header div:nth-child(3) a img {
+        height: 150px;
+        width: auto;
+        margin-top: 30px;
+        margin-right: 130px;
+    }
+
+header > div:nth-child(4) {
+    height: 680px;
+    width: 555px;
+    float: left;
+    border: 1px solid #464646;
+    background-color: white;
+    margin-top: 130px;
+    margin-right: 0px;
+    padding-right: 25px;
+    margin-left: 30px;
+}
+
+header p {
+    font-size: 24px;
+}
+
+.imagesForView {
+    height: 170px;
+    width: auto;
+}
+
+#scrollUp {
+    position: absolute;
+    margin-top: 785px;
+    right: 25px;
+    background-color: #747EE6;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    #scrollUp img {
+        height: 30px;
+        width: auto;
+    }
+
+/*---------------------------------------Footer------------------------------------*/
+
+footer {
+    background-color: #747EE6;
+    height: 275px;
+    color: white;
+}
+
+    footer div:first-child {
+        float: right;
+        position: relative;
+        top: 40px;
+        right: 120px;
+    }
+
+        footer div:first-child p {
+            font-size: 18px;
+        }
+
+    footer ul {
+        float: left;
+        margin-left: 450px;
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        height: 160px;
+        flex-direction: column;
+    }
+
+        footer ul li {
+            list-style: none;
+            margin-bottom: 15px;
+            width: 350px;
+        }
+
+            footer ul li a {
+                text-decoration: none;
+                font-size: 20px;
+                color: white;
+            }
+
+                footer ul li a:hover {
+                    text-decoration: underline;
+                }
+
+#appsLogos {
+    position: absolute;
+    margin-right: 1060px;
+    margin-top: 150px;
+}
+
+    #appsLogos img {
+        width: 50px;
+        height: auto;
+        margin: 10px;
+    }

@@ -1,0 +1,422 @@
+﻿/*---------------------------------------generals------------------------------------*/
+body {
+    direction: rtl;
+    margin: 0px;
+    font-family: 'Segoe UI';
+    color: #464646;
+}
+
+.allSections {
+    height: 715px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 65px;
+}
+
+h2 {
+    font-size: 45px;
+    margin: 0px;
+}
+
+h3 {
+    font-size: 30px;
+    margin: 0px;
+}
+
+p {
+    font-size: 28px;
+    margin: 0px;
+}
+
+.arrow {
+    height: 70px;
+    width: auto;
+}
+
+.requiredInputs {
+    color: red;
+}
+/*---------------------------------------nav bar------------------------------------*/
+
+nav {
+    background-color: #747EE6;
+    width: 100%;
+    height: 55px;
+}
+
+    nav ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        height: 55px;
+    }
+
+        nav ul li a {
+            padding-right: 45px;
+            padding-left: 45px;
+            text-decoration: none;
+            font-size: 30px;
+            color: white;
+            height: 55px;
+            display: flex;
+            align-items: center;
+        }
+
+            nav ul li a img {
+                height: 35px;
+                width: auto;
+            }
+
+    nav a:hover {
+        background-color: #4753D1;
+    }
+
+    nav ul li:nth-child(2) {
+        background-color: #4753D1;
+    }
+/*---------------------------------------header------------------------------------*/
+
+header {
+    background-color: #F7DAE7;
+}
+
+#breadCrumbs {
+    position: absolute;
+    top: 80px;
+    right: 100px;
+}
+
+    #breadCrumbs li {
+        display: inline;
+    }
+
+        #breadCrumbs li a {
+            color: #464646;
+        }
+
+header > div {
+    margin-right: 100px;
+    margin-top: 100px;
+    float: right;
+}
+
+    header > div > h1 {
+        margin-top: 0px;
+    }
+
+header div div {
+    margin-top: 100px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    header div div img {
+        margin-top: 35px;
+    }
+
+header > img:last-child {
+    height: 450px;
+    width: auto;
+    margin-top: 210px;
+    position: absolute;
+    left: 0px;
+}
+
+/*---------------------------------------section1------------------------------------*/
+.allSections:nth-child(2) {
+    background-color: #FFFBE7;
+}
+
+    .allSections:nth-child(2) form {
+        width: 600px;
+        height: 640px;
+        position: relative;
+        top: 40px;
+        right: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        float: right;
+    }
+
+        .allSections:nth-child(2) form h2 {
+            position: relative;
+            width: 200px;
+            margin-bottom: 10px;
+        }
+
+        .allSections:nth-child(2) form fieldset, #myDish {
+            width: 260px;
+            padding: 0px;
+            background-color: white;
+            border: 1px solid #464646;
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+
+            .allSections:nth-child(2) form fieldset:nth-child(4) {
+                margin-top: 0px;
+            }
+
+            .allSections:nth-child(2) form div, #myDish > div {
+                height: 55px;
+                width: 260px;
+                background-color: #464646;
+                color: white;
+                margin: 0px;
+                display: flex;
+                align-items: center;
+            }
+
+                .allSections:nth-child(2) form div span, #myDish > div > span {
+                    width: 260px;
+                    text-align: center;
+                    font-size: 22px;
+                    font-weight: bold;
+                }
+
+
+input[type='radio'], input[type='checkbox'] {
+    transform: scale(2);
+    margin: 15px;
+}
+
+label {
+    display: block;
+    font-size: 20px;
+}
+
+
+#myDish {
+    height: 400px;
+    float: left;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+    #myDish, #myDish > div, #myDish > div > span {
+        width: 715px;
+    }
+
+/*interactive menu*/
+
+.menuAdditions {
+    height: 110px;
+    width: auto;
+}
+
+#myDish > div:nth-child(2) {
+    height: 345px;
+    background-color: transparent;
+}
+
+    #myDish > div:nth-child(2) > div:first-child {
+        width: 235px;
+        height: 345px;
+        border-left: 1px solid #464646;
+        background-color: transparent;
+    }
+
+    #myDish > div:nth-child(2) > div:nth-child(2) {
+        display: flex;
+        align-content: flex-start;
+        flex-direction: column;
+        width: 500px;
+        height: 345px;
+    }
+
+        #myDish > div:nth-child(2) > div:nth-child(2) > div:first-child {
+            display: flex;
+            justify-content: space-around;
+        }
+
+.menuDrinks {
+    height: 130px;
+    width: auto;
+}
+
+.menuAdditions, .menuDrinks {
+    opacity: 30%;
+}
+
+    .menuAdditions:hover, .menuDrinks:hover {
+        opacity: 100%;
+    }
+/*pancakes*/
+
+#myDish > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #464646;
+}
+
+.menuPancakesAllSauces {
+    height: 250px;
+    width: auto;
+}
+
+
+/*---------------------------------------section2------------------------------------*/
+.allSections:nth-child(3) {
+    background-color: #C9E6FF;
+}
+
+    .allSections:nth-child(3) h2 {
+        text-align: center;
+        position: relative;
+        top: 50px;
+    }
+
+    .allSections:nth-child(3) form {
+        border: 1px solid #464646;
+        height: 440px;
+        width: 1258px;
+        margin-top: 80px;
+        margin-right: 100px;
+        background-color: white;
+        padding: 30px;
+    }
+
+        .allSections:nth-child(3) form fieldset {
+            border: none;
+        }
+
+            .allSections:nth-child(3) form fieldset label:nth-child(-n+4) {
+                display: inline-block;
+                margin-left: 20px;
+                margin-bottom: 10px;
+            }
+
+#cardBackNumber {
+    width: 180px;
+}
+
+#dropdownBranch {
+    width: 294px;
+    padding: 10px;
+    border: 1px solid #464646;
+    border-radius: 4px;
+    color: #464646;
+    font-size: 16px;
+}
+
+    #dropdownBranch option {
+        color: #464646;
+        font-size: 16px;
+    }
+
+input[type='text'], input[type='number'], input[type='tel'] {
+    height: 35px;
+    width: 287px
+}
+
+input[type="submit"] {
+    background-color: #E1E2EA;
+    border: 5px solid #9598D6;
+    border-radius: 33px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Segoe UI';
+    color: #464646;
+    height: 66px;
+    width: 240px;
+    margin-top: 15px;
+    margin-right: 13px;
+    cursor: not-allowed;
+}
+
+    input[type="submit"]:hover {
+        background-color: #9598D6;
+    }
+
+    input[type="submit"]:active {
+        color: white;
+    }
+
+.allSections:nth-child(3) iframe {
+    height: 320px;
+    width: 910px;
+    position: absolute;
+    right: 460px;
+    margin-top: 220px;
+}
+
+#scrollUp {
+    position: absolute;
+    margin-top: 13px;
+    right: 25px;
+    background-color: #747EE6;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    #scrollUp img {
+        height: 30px;
+        width: auto;
+    }
+
+/*---------------------------------------Footer------------------------------------*/
+footer {
+    background-color: #747EE6;
+    height: 275px;
+    color: white;
+}
+
+    footer div:first-child {
+        float: right;
+        position: relative;
+        top: 40px;
+        right: 120px;
+    }
+
+        footer div:first-child p {
+            font-size: 18px;
+        }
+
+    footer ul {
+        float: left;
+        margin-left: 450px;
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        height: 160px;
+        flex-direction: column;
+    }
+
+        footer ul li {
+            list-style: none;
+            margin-bottom: 15px;
+            width: 350px;
+        }
+
+            footer ul li a {
+                text-decoration: none;
+                font-size: 20px;
+                color: white;
+            }
+
+                footer ul li a:hover {
+                    text-decoration: underline;
+                }
+
+#appsLogos {
+    position: absolute;
+    margin-right: 1060px;
+    margin-top: 150px;
+}
+
+    #appsLogos img {
+        width: 50px;
+        height: auto;
+        margin: 10px;
+    }

@@ -1,0 +1,349 @@
+﻿/*---------------------------------------generals------------------------------------*/
+body {
+    direction: rtl;
+    margin: 0px;
+    font-family: 'Segoe UI';
+    color: #464646;
+}
+
+.allSections {
+    height: 715px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 65px;
+}
+
+h2 {
+    font-size: 45px;
+    margin: 0px;
+}
+
+h3 {
+    font-size: 30px;
+    margin: 0px;
+}
+
+p {
+    font-size: 28px;
+    margin: 0px;
+}
+
+/*---------------------------------------nav bar------------------------------------*/
+
+nav {
+    background-color: #747EE6;
+    width: 100%;
+    height: 55px;
+}
+
+    nav ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        height: 55px;
+    }
+
+        nav ul li a {
+            padding-right: 45px;
+            padding-left: 45px;
+            text-decoration: none;
+            font-size: 30px;
+            color: white;
+            height: 55px;
+            display: flex;
+            align-items: center;
+        }
+
+            nav ul li a img {
+                height: 35px;
+                width: auto;
+            }
+
+    nav a:hover {
+        background-color: #4753D1;
+    }
+
+    nav ul li:nth-child(3) {
+        background-color: #4753D1;
+    }
+/*---------------------------------------header------------------------------------*/
+
+header {
+    height: 350px;
+    width: 100%;
+    background-color: #F7DAE7;
+}
+
+#breadCrumbs {
+    position: absolute;
+    top: 80px;
+    right: 100px;
+}
+
+    #breadCrumbs li {
+        display: inline;
+    }
+
+        #breadCrumbs li a {
+            color: #464646;
+        }
+
+    header > div {
+        margin-right: 100px;
+        margin-top: 50px;
+        float: right;
+    }
+
+        header > div > h1 {
+            margin-top: 20px;
+        }
+
+    header div div {
+        margin-top: 100px;
+        width: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+/*---------------------------------------section1------------------------------------*/
+.allSections:nth-child(2) {
+    background-color: #FFFBE7;
+    display: flex;
+    justify-content: center;
+    height: 1630px;
+}
+
+
+#recommendationsBoard {
+    margin-top: 30px;
+    height: auto;
+    width: 1320px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.reccomendations {
+    width: 350px;
+    height: auto;
+    border: 1px solid #464646;
+    margin-bottom: 60px;
+    background-color: white;
+}
+
+    .reccomendations div:first-child {
+        height: 55px;
+        width: 350px;
+        background-color: #464646;
+        color: white;
+        display: flex;
+        align-items: center;
+    }
+
+        .reccomendations div:first-child span {
+            display: block;
+            width: 350px;
+            text-align: center;
+            font-size: 28px;
+        }
+
+    .reccomendations div:nth-child(2) {
+        width: 320px;
+        padding: 10px;
+    }
+
+        .reccomendations div:nth-child(2) span {
+            font-size: 24px;
+        }
+
+            .reccomendations div:nth-child(2) span span {
+                color: gray;
+                font-size: 22px;
+            }
+
+#branchOfTheWeek {
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    right: 100px;
+    margin-top: 1480px;
+}
+
+    #branchOfTheWeek span {
+        font-size: 62px;
+    }
+/*---------------------------------------section2------------------------------------*/
+.allSections:nth-child(3) {
+    background-color: #C9E6FF;
+}
+
+    .allSections:nth-child(3) h2 {
+        text-align: center;
+        position: relative;
+        top: 50px;
+    }
+
+    .allSections:nth-child(3) h3 {
+        margin-bottom: 30px;
+    }
+
+#branchRating {
+    height: auto;
+    width: 450px;
+    margin-top: 100px;
+    margin-right: 100px;
+    float: right;
+}
+
+    #branchRating > div {
+        margin-bottom: 15px;
+        margin-left: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    #branchRating div > span {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+    }
+
+        #branchRating div > span:first-child {
+            background-color: #464646;
+            margin-left: 20px;
+            color: white;
+            height: 55px;
+            width: 170px;
+        }
+
+            #branchRating div > span:first-child span {
+                display: block;
+                text-align: center;
+                width: 170px;
+            }
+
+    #branchRating div span:nth-child(2) {
+        font-size: 28px;
+    }
+
+/*Tables*/
+
+#tablesRatings {
+    height: auto;
+    width: 850px;
+    float: left;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+table:first-child {
+    width: 425px;
+}
+
+tr:first-child th {
+    background-color: #464646;
+    color: white;
+}
+
+th {
+    font-size: 28px;
+}
+
+td {
+    font-size: 24px;
+    text-align: center;
+}
+
+th, td, tr {
+    /*    border: 1px solid #464646;*/
+    padding: 5px;
+    background-color: white;
+    margin: 0px;
+    outline: 1px solid #464646;
+}
+
+table:nth-child(2), table:nth-child(3) {
+    width: 850px;
+    margin-top: 30px;
+}
+
+#scrollUp {
+    position: absolute;
+    margin-top: 595px;
+    right: 25px;
+    background-color: #747EE6;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    #scrollUp img {
+        height: 30px;
+        width: auto;
+    }
+
+/*---------------------------------------Footer------------------------------------*/
+footer {
+    background-color: #747EE6;
+    height: 275px;
+    color: white;
+}
+
+    footer div:first-child {
+        float: right;
+        position: relative;
+        top: 40px;
+        right: 120px;
+    }
+
+        footer div:first-child p {
+            font-size: 18px;
+        }
+
+    footer ul {
+        float: left;
+        margin-left: 450px;
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        height: 160px;
+        flex-direction: column;
+    }
+
+        footer ul li {
+            list-style: none;
+            margin-bottom: 15px;
+            width: 350px;
+        }
+
+            footer ul li a {
+                text-decoration: none;
+                font-size: 20px;
+                color: white;
+            }
+
+                footer ul li a:hover {
+                    text-decoration: underline;
+                }
+
+#appsLogos {
+    position: absolute;
+    margin-right: 1060px;
+    margin-top: 150px;
+}
+
+    #appsLogos img {
+        width: 50px;
+        height: auto;
+        margin: 10px;
+    }

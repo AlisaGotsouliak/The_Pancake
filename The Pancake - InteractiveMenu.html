@@ -1,0 +1,345 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>The Pancake - תפריט אינטראקטיבי</title>
+    <link rel="icon" href="images/section_header/The Pancake Favicon.png">
+    <meta name="description" content="אתר המותג האהוב של פנקייקים עם תפריט ואפשרות להזמנות" />
+    <meta name="keywords" content="פנקייקים, מתוק, קינוח, שוקולד, מפנק" />
+    <meta name="author" content="יעל צורן ואליסה גוצוליאק - הפקולטה לטכנולוגיות למידה - HIT" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <!-- CSS -->
+    <link href="styles/InteractiveMenu_Style.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-3.6.0.min.js"></script>
+    <script src="jScripts/JavaScript.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="container">
+        <header class="allSections">
+            <nav aria-label="main-nav">
+                <ul>
+                    <li>
+                        <a href="index.html"><img src="images/section_header/The Pancake_logo.png" /></a>
+                    </li>
+                    <li><a href="The Pancake - InteractiveMenu.html">תפריט אינטראקטיבי</a></li>
+                    <li><a href="The Pancake - Recommendations.html">המלצות</a></li>
+                    <li><a href="The Pancake - SiteMap.html">מפת אתר</a></li>
+                    <li><a href="The Pancake - About Us.html">אודות</a></li>
+                    <li><a href="The Pancake - Contact Us.html">צרו קשר</a></li>
+                </ul>
+            </nav>
+
+            <ul id="breadCrumbs">
+                <li><a href="index.html">עמוד הבית</a></li>
+                <li><span>></span></li>
+                <li><a href="The Pancake - InteractiveMenu.html">תפריט אינטראקטיבי</a></li>
+            </ul>
+
+            <div>
+                <h1>התפריט האינטראקטיבי שלנו</h1>
+                <p>
+                    הרכיבו מנה טעימה וחלומית,
+                    <br />
+                    בחרו ברטבים ובתוספות המועדים עליכם
+                    <br />
+                    וצרו את השילוב המושלם
+                </p>
+
+                <div>
+                    <h3>לתפריט שלנו</h3>
+                    <img class="arrow" src="images/all_sections/arrow.png" alt="חץ מופנה כלפי מטה" />
+                </div>
+            </div>
+            <img src="images/section_header/header_plates_left.png" alt="" />
+        </header>
+
+        <section class="allSections">
+
+            <form>
+                <h2>תפריט</h2>
+                <fieldset for="theMenu">
+                    <div>
+                        <span>
+                            <span class="requiredInputs">* </span>
+                            מספר פנקייקים
+                        </span>
+                    </div>
+                    <label for="onePancake">
+                        <input id="onePancake" type="radio" name="numOfPancakes" value="0" onchange="requiredPancake()" />
+                        1
+                    </label>
+
+                    <label for="twoPancake">
+                        <input id="twoPancake" type="radio" name="numOfPancakes" value="1" onchange="requiredPancake()" />
+                        2
+                    </label>
+
+                    <label for="threePancake">
+                        <input id="threePancake" type="radio" name="numOfPancakes" value="2" onchange="requiredPancake()" />
+                        3
+                    </label>
+                </fieldset>
+
+                <fieldset for="theMenu">
+                    <div>
+                        <span>
+                            <span class="requiredInputs">* </span>
+                            רטבים
+                        </span>
+                    </div>
+                    <label for="chocolate">
+                        <input id="chocolate" type="radio" name="sauceOfPancakes" onchange="requiredPancake()" required/>
+                        שוקולד
+                    </label>
+
+                    <label for="whiteChocolate">
+                        <input id="whiteChocolate" type="radio" name="sauceOfPancakes" onchange="requiredPancake()" required/>
+                        שוקולד לבן
+                    </label>
+
+                    <label for="maple">
+                        <input id="maple" type="radio" name="sauceOfPancakes" onchange="requiredPancake()" required/>
+                        מייפל
+                    </label>
+
+                    <label for="strawberry">
+                        <input id="strawberry" type="radio" name="sauceOfPancakes" onchange="requiredPancake()" required/>
+                        תות
+                    </label>
+
+                    <label for="saltedCaramel">
+                        <input id="saltedCaramel" type="radio" name="sauceOfPancakes" onchange="requiredPancake()" required/>
+                        קרמל מלוח
+                    </label>
+
+                    <label for="noSauce">
+                        <input id="noSauce" type="radio" name="sauceOfPancakes" onchange="requiredPancake()" required/>
+                        ללא רוטב
+                    </label>
+                </fieldset>
+
+                <fieldset for="additions">
+                    <div><span>תוספות</span></div>
+
+                    <label for="bagels">
+                        <input id="bagels" type="checkbox" name="additionName" onchange="requiredAddition()" />
+                        בייגלה
+                    </label>
+
+                    <label for="berries">
+                        <input id="berries" type="checkbox" name="additionName" onchange="requiredAddition()" />
+                        פירות יער
+                    </label>
+
+                    <label for="iceCream">
+                        <input id="iceCream" type="checkbox" name="additionName" onchange="requiredAddition()" />
+                        גלידה
+                    </label>
+
+                    <label for="lotus">
+                        <input id="lotus" type="checkbox" name="additionName" onchange="requiredAddition()" />
+                        לוטוס
+                    </label>
+
+                    <label for="marshmallow">
+                        <input id="marshmallow" type="checkbox" name="additionName" onchange="requiredAddition()" />
+                        מרשמלו
+                    </label>
+
+                    <label for="mekupelet">
+                        <input id="mekupelet" type="checkbox" name="additionName" onchange="requiredAddition()" />
+                        מקופלת
+                    </label>
+                </fieldset>
+
+                <fieldset for="drinks">
+                    <div><span>שתייה</span></div>
+                    <label for="coldChocolate">
+                        <input id="coldChocolate" type="checkbox" name="drinkName" onchange="requiredDrink()" />
+                        שוקו קר
+                    </label>
+
+                    <label for="coldCoffee">
+                        <input id="coldCoffee" type="checkbox" name="drinkName" onchange="requiredDrink()" />
+                        קפה קר
+                    </label>
+
+                    <label for="greenTea">
+                        <input id="greenTea" type="checkbox" name="drinkName" onchange="requiredDrink()" />
+                        תה ירוק
+                    </label>
+
+                    <label for="hotChocolate">
+                        <input id="hotChocolate" type="checkbox" name="drinkName" onchange="requiredDrink()" />
+                        שוקו חם
+                    </label>
+
+                    <label for="hotCoffee">
+                        <input id="hotCoffee" type="checkbox" name="drinkName" onchange="requiredDrink()" />
+                        קפה חם
+                    </label>
+                </fieldset>
+            </form>
+
+            <div id="myDish">
+                <div>
+                    <span>המנה שלי</span>
+                </div>
+
+                <div>
+                    <div>
+                        <img class="menuAdditions" src="images/images_InteractiveMenu_products/additions/bagels.png" alt="תוספת בייגלה">
+                        <img class="menuAdditions" src="images/images_InteractiveMenu_products/additions/berries.png" alt="תוספת פירות יער"/>
+                        <img class="menuAdditions" src="images/images_InteractiveMenu_products/additions/iceCream.png" alt="תוספת גלידה"/>
+                        <img class="menuAdditions" src="images/images_InteractiveMenu_products/additions/lotus.png" alt="תוספת לוטוס"/>
+                        <img class="menuAdditions" src="images/images_InteractiveMenu_products/additions/marshmello.png" alt="תוספת מרשמלו"/>
+                        <img class="menuAdditions" src="images/images_InteractiveMenu_products/additions/mekupelet.png" alt="תוספת מקופלת"/>
+                    </div>
+
+                    <div>
+                        <div>
+                            <img class="menuDrinks" src="images/images_InteractiveMenu_products/drinks/coldChocolate.png" alt="שתייה שוקו קר"/>
+                            <img class="menuDrinks" src="images/images_InteractiveMenu_products/drinks/coldCoffee.png" alt="שתייה קפה קר"/>
+                            <img class="menuDrinks" src="images/images_InteractiveMenu_products/drinks/greenTea.png" alt="שתייה תה ירוק"/>
+                            <img class="menuDrinks" src="images/images_InteractiveMenu_products/drinks/hotChocolate.png" alt="שתייה שוקו חם"/>
+                            <img class="menuDrinks" src="images/images_InteractiveMenu_products/drinks/hotCoffee.png" alt="שתייה קפה חם"/>
+                        </div>
+                        <div>
+                            <div id="reqiredPancakeImage">
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="allSections">
+            <h2>הזמנה</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3488018.34752758!2d37.72295757632962!3d31.37917534290275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1500492432a7c98b%3A0x6a6b422013352cba!2z15nXqdeo15DXnA!5e0!3m2!1siw!2sil!4v1686305397498!5m2!1siw!2sil"></iframe>
+            <form>
+                <fieldset>
+
+                    <label for="fullName">
+                        <span>
+                            <span class="requiredInputs">* </span>
+                            שם מלא
+                        </span>
+                        <br />
+                        <input id="fullName" type="text" placeholder="שם מלא" required/>
+                    </label>
+
+                    <label for="phoneNumber">
+                        <span>
+                            <span class="requiredInputs">* </span>
+                            מספר טלפון
+                        </span>
+                        <br />
+                        <input id="phoneNumber" type="tel" placeholder="מספר טלפון" required/>
+                    </label>
+
+                    <label for="cardNumber">
+                        <span>
+                            <span class="requiredInputs">* </span>
+                            מספר כרטיס אשראי
+                        </span>
+                        <br />
+                        <input id="cardNumber" type="number" placeholder="מספר כרטיס אשראי" required/>
+                    </label>
+
+                    <label for="cardBackNumber">
+                        <span>
+                            <span class="requiredInputs">* </span>
+                            ספרות בגב הכרטיס
+                        </span>
+                        <br />
+                        <input id="cardBackNumber" type="number" placeholder="ספרות בגב הכרטיס" required/>
+                    </label>
+
+                    <label for="dropdownBranch">
+                        <span>
+                            <span class="requiredInputs">* </span>
+                            סניף
+                        </span>
+                        <br />
+                        <select id="dropdownBranch" name="dropdownBranch" required>
+                            <option value="">בחרו סניף</option>
+                            <option value="rishonLeZion">ראשון לציון</option>
+                            <option value="rehovot">רחובות</option>
+                            <option value="holon">חולון</option>
+                            <option value="ramatGan">רמת גן</option>
+                            <option value="telAviv">תל אביב</option>
+                            <option value="jerusalem">ירושלים</option>
+                        </select>
+                    </label>
+
+                    <label for="sitting">
+                        <input id="sitting" type="radio" name="orderType" required/>
+                        יושבים במסעדה
+                    </label>
+
+                    <label for="takeAway">
+                        <input id="takeAway" type="radio" name="orderType" required/>
+                        לוקחים לדרך
+                    </label>
+
+                    <label for="delievery">
+                        <input id="delievery" type="radio" name="orderType" required/>
+                        משלוח
+                    </label>
+
+                    <label for="adress">
+                        <span>
+                            <span class="requiredInputs">* </span>
+                            כתובת
+                        </span>
+                        <br />
+                        <input id="adress" type="text" placeholder="כתובת" required/>
+                    </label>
+                </fieldset>
+
+                <input type="submit" value="אישור הזמנה" />
+            </form>
+            <div id="scrollUp">
+                <a href="#top"><img src="images/section_activities/scrollUpArrow.png" alt="חץ גלילה לראש העמוד"/></a>
+            </div>
+        </section>
+
+        <footer>
+            <div>
+                <h3>המטרה שלנו</h3>
+                <p>
+                    אנחנו רוצות שתהנו מפנקייקים איכותיים,
+                    <br />
+                    עם מגוון רטבים ותוספות נפלאות.
+                    <br />
+                    גלו איזה פנקייק אתם, הרכיבו את המנה המושלמת,
+                    <br />
+                    וצרו חוויות עם משפחה וחברים :)
+                </p>
+            </div>
+
+            <div>
+                <ul>
+                    <li><a href="The Pancake - InteractiveMenu.html">תפריט אינטרקטיבי</a></li>
+                    <li><a href="The Pancake - Recommendations.html">המלצות</a></li>
+                    <li><a href="The Pancake - SiteMap.html">מפת אתר</a></li>
+                    <li><a href="The Pancake - About Us.html">אודות</a></li>
+                    <li><a href="The Pancake - Contact Us.html">צרו קשר</a></li>
+                </ul>
+            </div>
+
+            <div id="appsLogos">
+                <img src="images/section_footer/snapchat.png" alt="אייקון snapchat"/>
+                <img src="images/section_footer/whatsapp.png" alt="אייקון whatsapp"/>
+                <img src="images/section_footer/instagram.png" alt="אייקון instagram"/>
+                <img src="images/section_footer/facebook.png" alt="אייקון facebook"/>
+                <img src="images/section_footer/twitter.png" alt="אייקון twitter"/>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+

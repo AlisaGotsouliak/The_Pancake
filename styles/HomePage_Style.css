@@ -1,0 +1,419 @@
+﻿/*---------------------------------------generals------------------------------------*/
+body {
+    direction: rtl;
+    margin: 0px;
+    font-family: 'Segoe UI';
+    color: #464646;
+}
+
+.allSections {
+    height: 715px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 65px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 45px;
+    margin: 0px;
+}
+
+h3 {
+    font-size: 30px;
+    margin: 0px;
+}
+
+p {
+    font-size: 28px;
+    margin: 0px;
+}
+
+.arrow {
+    height: 70px;
+    width: auto;
+}
+
+.requiredInputs {
+    color: red;
+}
+/*---------------------------------------nav bar------------------------------------*/
+
+nav {
+    background-color: #747EE6;
+    width: 100%;
+    height: 55px;
+}
+
+    nav ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        height: 55px;
+    }
+
+        nav ul li a {
+            padding-right: 45px;
+            padding-left: 45px;
+            text-decoration: none;
+            font-size: 30px;
+            color: white;
+            height: 55px;
+            display: flex;
+            align-items: center;
+        }
+
+            nav ul li a img {
+                height: 35px;
+                width: auto;
+            }
+nav a:hover {
+    background-color: #4753D1;
+}
+
+    nav ul li:first-child {
+        background-color: #4753D1;
+    }
+/*---------------------------------------header------------------------------------*/
+
+header {
+    background-color: #F7DAE7;
+}
+
+    header > img {
+        height: 660px;
+        float: left;
+    }
+
+    header > div {
+        margin: 100px;
+    }
+
+    header div div {
+        margin-top: 100px;
+        width: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        header div div img {
+            margin-top: 35px;
+        }
+
+/*---------------------------------------section1------------------------------------*/
+.allSections:nth-child(2) {
+    background-color: #FFFBE7;
+}
+
+
+#findMyTaste {
+    font-size: 24px;
+    margin-right: 100px;
+    height: 60px;
+    width: 200px;
+    background-color: white;
+    border: 1px solid #464646;
+    position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pancakesMenu {
+    height: 535px;
+    width: 465px;
+    background-color: white;
+    border: 1px solid #464646;
+    margin-right: 250px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-self: center;
+    float: right;
+}
+
+    #pancakesMenu img {
+        height: 170px;
+        width: auto;
+    }
+
+#menuInfo {
+    margin-right: 70px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+#hardToChoose div {
+    font-size: 30px;
+    margin-top: 110px;
+}
+
+.allBtns {
+    background-color: #E1E2EA;
+    border: 5px solid #9598D6;
+    border-radius: 33px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Segoe UI';
+    color: #464646;
+    height: 66px;
+    width: 240px;
+    margin-top: 60px;
+   }
+
+#leaveDetails {
+    cursor: not-allowed;
+}
+
+.allBtns:hover {
+    background-color: #9598D6;
+}
+
+    .allBtns:active {
+        color: white;
+    }
+
+#hardToChoose img {
+    margin-top: 35px;
+    margin-right: 130px;
+}
+/*interactive*/
+.menuImages span {
+    display: none;
+}
+
+.menuImages:hover img{
+    opacity: 0%;
+}
+
+.menuImages:hover span {
+    height: auto;
+    width: 170px;
+    text-align: center;
+    display: block;
+    position: absolute;
+    margin-top: 80px;
+    font-size: 30px;
+}
+/*---------------------------------------section2------------------------------------*/
+.allSections:nth-child(3) {
+    background-color: #C9E6FF;
+}
+
+    .allSections:nth-child(3) h2 {
+        text-align: center;
+        position: relative;
+        top: 50px;
+    }
+
+#whoAmI div img {
+    width: 268px;
+    height: auto;
+}
+
+#whoAmI {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 100px;
+    margin-left: 100px;
+    position: relative;
+    top: 130px;
+}
+
+    #whoAmI div img:hover {
+        width: 300px;
+        height: auto;
+    }
+
+    #whoAmI div p {
+        text-align: center;
+    }
+
+/*---------------------------------------section3------------------------------------*/
+.allSections:nth-child(4) {
+    background-color: #D9FFC3;
+}
+
+#allActivities {
+    margin-right: 100px;
+    float: right;
+    height: 585px;
+}
+
+.activityInfo {
+    display: flex;  
+    align-items: center;
+    margin-top: 50px;
+}
+
+.circleImages img{
+    position: absolute;
+    height:160px;
+    width: auto;
+}
+
+    .activityContainer {
+    height: 120px;
+    width: 780px;
+    background-color: white;
+    margin-right: 85px;
+    border: 1px solid #464646;
+    border-radius: 390px;
+    display: flex;
+    align-items: center;
+}
+
+    .activityContainer span {
+        font-weight: bold;
+    }
+
+    .activityContainer p {
+        font-size: 20px;
+        margin-right: 105px;
+    }
+
+    .allSections:nth-child(4) h2 {
+        position: relative;
+        top: 60px;
+        margin-bottom: 70px;
+        text-align: center;
+    }
+
+.circle {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-radius: 80px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border: 1px solid #464646;
+}
+
+#circle1 {
+    background-color: #A32D3D;
+}
+
+#circle2 {
+    background-color: #3fb692;
+}
+
+#circle3 {
+    background-color: #FFD966;
+}
+
+.circleImages {
+    height: 190px;
+    width: 190px;
+    position: absolute;
+}
+
+.allSections:nth-child(4) form {
+    float: left;
+    height: 463px;
+    width: 390px;
+    background-color: white;
+    border: 1px solid #464646;
+    margin-left: 120px;
+    margin-top: 50px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+    .allSections:nth-child(4) form h3 {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .textbox {
+        height: 30px;
+        width: 280px;
+    }
+
+.allSections:nth-child(4) form label span{
+    font-size: 20px;
+}
+
+#scrollUp {
+    position: absolute;
+    right: 25px;
+    margin-top: 525px;
+    height: 60px;
+    width: 60px;
+    background-color: #747EE6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scrollUp img {
+    height: 30px;
+    width: auto;
+}
+
+/*---------------------------------------Footer------------------------------------*/
+
+footer {
+    background-color: #747EE6;
+    height: 275px;
+    color: white;
+}
+
+    footer div:first-child {
+        float: right;
+        position: relative;
+        top: 40px;
+        right: 120px;
+    }
+
+    footer div:first-child p {
+        font-size: 18px;
+    }
+
+    footer ul {
+        float: left;
+        margin-left: 450px;
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        height: 160px;
+        flex-direction: column;
+    }
+
+        footer ul li {
+            list-style: none;
+            margin-bottom: 15px;
+            width: 350px;
+        }
+
+    footer ul li a {
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+    }
+
+        footer ul li a:hover {
+            text-decoration: underline;
+        }
+
+#appsLogos {
+    position: absolute;
+    margin-right: 1060px;
+    margin-top: 150px;
+}
+
+#appsLogos img {
+    width: 50px;
+    height: auto;
+    margin: 10px;
+}
+

@@ -1,0 +1,214 @@
+﻿/*---------------------------------------generals------------------------------------*/
+body {
+    direction: rtl;
+    margin: 0px;
+    font-family: 'Segoe UI';
+    color: #464646;
+}
+
+.allSections {
+    height: 720px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 65px;
+}
+
+h2 {
+    font-size: 45px;
+    margin: 0px;
+}
+
+h3 {
+    font-size: 30px;
+    margin: 0px;
+}
+
+p {
+    font-size: 28px;
+    margin: 0px;
+}
+
+.requiredInputs {
+    color: red;
+}
+/*---------------------------------------nav bar------------------------------------*/
+
+nav {
+    background-color: #747EE6;
+    width: 100%;
+    height: 55px;
+}
+
+    nav ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        height: 55px;
+    }
+
+        nav ul li a {
+            padding-right: 45px;
+            padding-left: 45px;
+            text-decoration: none;
+            font-size: 30px;
+            color: white;
+            height: 55px;
+            display: flex;
+            align-items: center;
+        }
+
+            nav ul li a img {
+                height: 35px;
+                width: auto;
+            }
+
+    nav a:hover {
+        background-color: #4753D1;
+    }
+
+    nav ul li:nth-child(6) {
+        background-color: #4753D1;
+    }
+/*---------------------------------------header------------------------------------*/
+
+header {
+    background-color: #F7DAE7;
+}
+
+#breadCrumbs {
+    position: absolute;
+    top: 80px;
+    right: 100px;
+}
+
+    #breadCrumbs li {
+        display: inline;
+    }
+
+        #breadCrumbs li a {
+            color: #464646;
+        }
+
+header > div {
+    margin: 100px;
+    float: right;
+}
+
+    header > div > div {
+        font-size: 28px;
+    }
+
+header form {
+    margin-top: 100px;
+    margin-left: 100px;
+    float: left;
+    height: 440px;
+    width: 660px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+    padding-top: 20px;
+}
+
+    header form h2 {
+        width: 660px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    header form input[type="text"], header form input[type="tel"], header form input[type="email"] {
+        height: 35px;
+        width: 287px;
+    }
+
+#message {
+    height: 130px;
+    width: 617px;
+}
+
+.allBtns {
+    background-color: #E1E2EA;
+    border: 5px solid #9598D6;
+    border-radius: 33px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Segoe UI';
+    color: #464646;
+    height: 66px;
+    width: 240px;
+    margin-top: 20px;
+    cursor: not-allowed;
+}
+
+    .allBtns:hover {
+        background-color: #9598D6;
+    }
+
+    .allBtns:active {
+        color: white;
+    }
+
+
+/*---------------------------------------Footer------------------------------------*/
+
+footer {
+    background-color: #747EE6;
+    height: 275px;
+    color: white;
+}
+
+    footer div:first-child {
+        float: right;
+        position: relative;
+        top: 40px;
+        right: 120px;
+    }
+
+        footer div:first-child p {
+            font-size: 18px;
+        }
+
+    footer ul {
+        float: left;
+        margin-left: 450px;
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        height: 160px;
+        flex-direction: column;
+    }
+
+        footer ul li {
+            list-style: none;
+            margin-bottom: 15px;
+            width: 350px;
+        }
+
+            footer ul li a {
+                text-decoration: none;
+                font-size: 20px;
+                color: white;
+            }
+
+                footer ul li a:hover {
+                    text-decoration: underline;
+                }
+
+#appsLogos {
+    position: absolute;
+    margin-right: 1060px;
+    margin-top: 150px;
+}
+
+    #appsLogos img {
+        width: 50px;
+        height: auto;
+        margin: 10px;
+    }
